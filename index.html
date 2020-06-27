@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> SAF | HOME </title>
+		<link id="page_favicon" href="logo.ico" rel="icon" type="image/x-icon" />	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<style>
+			/* Remove the navbar's default margin-bottom and rounded borders */ 
+			.navbar {
+				margin-bottom: 0;
+				border-radius: 0;
+				background-color: MediumSeaGreen;
+				border: 2px solid  white;
+				text-color: green;
+				border-radius: 7px;
+			}
+			.li_col {
+				color: green;
+			}
+
+			/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+			.row.content {height: 450px}
+			
+			/* Set gray background color and 100% height */
+			.sidenav {
+				padding-top: 20px;
+				background-color: MediumSeaGreen;
+				left:-5px;
+				height: 100%;
+				border-radius: 7px;
+			}
+		
+			/* Set black background color, white text and some padding */
+			footer {
+				background-color: MediumSeaGreen;
+				color: white;
+				padding: 15px;
+				border-radius: 7px;
+			}
+			
+			/* On small screens, set height to 'auto' for sidenav and grid */
+			@media screen and (max-width: 767px) {
+				.sidenav {
+					height: auto;
+					padding: 15px;
+				}
+			}
+			.row.content {
+				height:auto;
+			} 
+		
+			/* Centered text */
+			.centered {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			.item {
+				position: relative;
+				text-align: center;
+				color: green;
+				border-radius: 15px;
+			}
+
+			#itemHighloght {
+				border: 2px solid white;
+				border-radius: 5px;
+			}
+			#over img {
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+
+					<a style="position:relative; top:-18px; color:white;"  class="navbar-brand" href="index.html">
+						<i class="fa fa-handshake-o fa-3x" aria-hidden="true"></i>
+						<!--<img  src="C:/Users/SureshChirra/Desktop/mSTAX_Website/logo.png" style="position:relative; top:-8px;height:200%"alt="Chicago">
+						-->
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li id="itemHighloght"><a style="color:white;"  href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+						<li ><a style="color:white;" href="feature.html"><i class="fa fa-heart" aria-hidden="true"></i> Features</a></li>
+						<li><a style="color:white;"  href="video.html"> <i class="fa fa-youtube-play" aria-hidden="true"></i> Videos</a></li>
+						<li><a style="color:white;" href="whats_new.html"><i class="fa fa-bell" aria-hidden="true"></i> What's New</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a style="color:white;" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> SAF - V1.0</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		  
+		<div class="container-fluid text-center">    
+			<div class="row content">
+				<div class="col-sm-9 text-left"> 
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
+
+						<div class="carousel-inner">
+							<div id="over" class="item active" >
+								<img  src="images/s1.png" title="Selenium Automation Framework flow">
+							</div>
+							<div id="over"  class="item">
+								<img src="images/s4.png" title="Selenium Automation Framework flow">
+							</div>
+							<div id="over"  class="item">
+								<img src="images/s2.jpg" title="Selenium Automation Framework flow">
+							</div>
+							<div id="over"  class="item">
+								<img src="images/s3.jpg" title="Selenium Automation Framework flow">
+							</div>
+						</div>
+
+						<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+	
+				<div class="col-sm-3 sidenav">
+					<div class="well" width="100%">
+						<h5 style="color:MediumSeaGreen"><u><b>Updates</b></u></h5>
+						<marquee width="100%" direction="up" height="100px" onmouseover="this.stop();" onmouseout="this.start();" scrollamount="2" >
+							<i class="fa fa-hand-o-right"> <a href="#"> SAF - Framework will support for Web automation</a></i><hr>
+							<i class="fa fa-hand-o-right"> <a href="#"> Parallel Execution supports</a></i><hr>
+							<i class="fa fa-hand-o-right"> <a href="#"> Failed Test cases Reexecution</a></i><hr>
+							<i class="fa fa-hand-o-right"> <a href="#"> Pre-Test data</a></i><hr>
+							<i class="fa fa-hand-o-right"> <a href="#"> Bunch of element actions</a></i><hr>
+						</marquee>
+					</div>
+					
+					<div class="well">
+						<h5 style="color:MediumSeaGreen"><u><b>Support</b></u></h5>
+						<p><a href="#">SAF - Latest Version : 1.0</a></p>
+						<p><a href="#">Phone: 9885279787</a></p>
+						<p><a href="#">Email: csr.mf7@gmail.com</a></p>
+						<p><a href="#">&nbsp &nbsp @Thank You</a></p>		
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="container-fluid text-center" style="position:relative;top:5px">
+			<p>TEST MORE & LIVE MORE... </p>
+		</footer>
+	</body>
+</html>

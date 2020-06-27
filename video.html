@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> SAF | Videos</title>
+		<link id="page_favicon" href="logo.ico" rel="icon" type="image/x-icon" />	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  
+		<style>
+			/* Remove the navbar's default margin-bottom and rounded borders */ 
+			.navbar {
+				margin-bottom: 0;
+				border-radius: 0;
+				background-color: MediumSeaGreen;
+				border: 2px solid  white;
+				text-color: green;
+				border-radius: 7px;
+			}
+			.li_col {
+				color: green;
+			}
+
+			/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+			.row.content {height: 450px}
+    
+			/* Set gray background color and 100% height */
+			.sidenav {
+				padding-top: 20px;
+				background-color: MediumSeaGreen;
+				left:-5px;
+				height: 100%;
+				border-radius: 7px;
+			}
+			
+			/* Set black background color, white text and some padding */
+			footer {
+				background-color: MediumSeaGreen;
+				color: white;
+				padding: 15px;
+				border-radius: 7px;
+			}
+					
+			/* On small screens, set height to 'auto' for sidenav and grid */
+			@media screen and (max-width: 767px) {
+				.sidenav {
+					height: auto;
+					padding: 15px;
+				}
+				.row.content {height:auto;} 
+			}
+			/* Container holding the image and the text */
+			.centered {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			.item {
+				position: relative;
+				text-align: center;
+				color: green;
+				border-radius: 15px;
+			}
+			#itemHighloght {
+				border: 2px solid white;
+				border-radius: 5px;
+			}
+			#example2 {
+				border: 2px solid MediumSeaGreen;
+				border-radius: 5px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+
+					<a style="position:relative; top:-18px; color:white;"  class="navbar-brand" href="index.html">
+						<i class="fa fa-handshake-o fa-3x" aria-hidden="true"></i>
+						<!--<img  src="C:/Users/SureshChirra/Desktop/mSTAX_Website/logo.png" style="position:relative; top:-8px;height:200%"alt="Chicago">
+						-->
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a style="color:white;"  href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+						<li><a style="color:white;" href="feature.html"><i class="fa fa-heart" aria-hidden="true"></i> Features</a></li>
+						<li id="itemHighloght"><a style="color:white;"  href="video.html"> <i class="fa fa-youtube-play" aria-hidden="true"></i> Videos</a></li>
+						<li><a style="color:white;" href="whats_new.html"><i class="fa fa-bell" aria-hidden="true"></i> What's New</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a style="color:white;" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> SAF - V1.0</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+  
+		<div class="container-fluid text-center">    
+			<div class="row" style = "position:relative; top:10px";>
+				<div id="example2" class="col-sm-4" >
+					<div  class="embed-responsive embed-responsive-16by9" >
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY" ></iframe>
+					</div><br>
+					<p><i class="fa fa-hand-o-right" aria-hidden="true"></i> How to setup the framework</p>
+				</div>
+	  
+				<div class="col-sm-4" id="example2">
+					<div class="embed-responsive embed-responsive-16by9" >
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY" ></iframe>
+					</div><br>
+					<p><i class="fa fa-hand-o-right" aria-hidden="true"></i> How to setup the framework</p>
+				</div>
+					
+				<div class="col-sm-4" id="example2">
+					<div class="embed-responsive embed-responsive-16by9" >
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY" ></iframe>
+					</div><br>
+					<p><i class="fa fa-hand-o-right" aria-hidden="true"></i> How to setup the framework</p>
+				</div>
+			</div> <hr>
+		</div>
+	</body>
+</html>

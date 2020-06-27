@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> SAF | What's New</title>
+		<link id="page_favicon" href="logo.ico" rel="icon" type="image/x-icon" />	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+		<style>
+			/* Remove the navbar's default margin-bottom and rounded borders */ 
+			.navbar {
+				margin-bottom: 0;
+				border-radius: 0;
+				background-color: MediumSeaGreen;
+				border: 2px solid  white;
+				text-color: green;
+				border-radius: 7px;
+			}
+			.li_col {
+				color: green;
+			}
+			/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+			.row.content {height: 450px}
+
+			/* Set gray background color and 100% height */
+			.sidenav {
+				padding-top: 20px;
+				background-color: MediumSeaGreen;
+				left:-5px;
+				height: 100%;
+				border-radius: 7px;
+			}
+			
+			/* Set black background color, white text and some padding */
+			footer {
+				background-color: MediumSeaGreen;
+				color: white;
+				padding: 15px;
+				border-radius: 7px;
+			}
+			
+			/* On small screens, set height to 'auto' for sidenav and grid */
+			@media screen and (max-width: 767px) {
+				.sidenav {
+					height: auto;
+					padding: 15px;
+				}
+				.row.content {height:auto;} 
+			}
+
+			#itemHighloght {
+				border: 2px solid white;
+				border-radius: 5px;
+			}
+			#demo, #demo1, #demo2
+			{
+				border: 2px solid MediumSeaGreen;
+			   border-radius: 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>                        
+					</button>
+
+					<a style="position:relative; top:-18px; color:white;"  class="navbar-brand" href="index.html">
+						<i class="fa fa-handshake-o fa-3x" aria-hidden="true"></i>
+						<!--<img  src="C:/Users/SureshChirra/Desktop/mSTAX_Website/logo.png" style="position:relative; top:-8px;height:200%"alt="Chicago">
+						-->
+					</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a style="color:white;"  href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+						<li><a style="color:white;" href="feature.html"><i class="fa fa-heart" aria-hidden="true"></i> Features</a></li>
+						<li><a style="color:white;"  href="video.html"> <i class="fa fa-youtube-play" aria-hidden="true"></i> Videos</a></li>
+						<li id="itemHighloght"><a style="color:white;" href="whats_new.html"><i class="fa fa-bell" aria-hidden="true"></i> What's New</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a style="color:white;" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> SAF - V1.0</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<div class="container-fluid text-center">    
+			<div class="col-sm-11 text-left" > 
+	 
+ 
+				<div class="row" style = "position:relative; top:10px;left:10px">
+					<a href="#demo" class="fa fa-hand-o-right btn btn-success" data-toggle="collapse">&nbsp &nbsp SAF - Framework release v1.0 &nbsp +</a>
+					<div id="demo" class="collapse"  style = "position:relative; top:10px;left:10px">
+						<p style = "position:relative; padding:10px;left:10px"> Released the initial version for Web application automation using selenium.</br>
+							SAF - Framework has contains the fully loaded element actions</br>
+							Supports the parallel execution</br>
+							Re execute the failed cases automatically</br>
+							Supports the running in code in different browsers (IE, Chrome, Firefox)</br>
+							Minimum setup is enough</br>
+							Results avilable in different formats (HTML, Screenshots, Logs and Documents)</br>
+							
+							Click here for complete coument link <a href="javadoc1.0" target="_blank"> <u><b>Java Document v1.0</b></u></a></br>
+						</p>
+					</div>
+				</div><br>
+	 
+	 		</div>
+		</div>
+	</body>
+</html>
